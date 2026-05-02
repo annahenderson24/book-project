@@ -16,7 +16,7 @@ Author: Anna Henderson
 GitHub Link: https://github.com/annahenderson24/book-project
 Project: Book Analyzer (CS I Project)
 Extra credit: I have fixed the bug in line no:.... or 
-              I implemeted a new feature:  if choice == '6', new feature ............ will be executed
+              I implemeted a new feature:  if choice == '6', can search for a word in selected book and count its frequency.
 """
 
 import requests
@@ -188,8 +188,9 @@ def main():
             else:
                 print("Error: Book not found.")
 
-         # NEW FEATURE   
+            
         elif choice == '6':
+            # NEW FEATURE 
             word = input("Enter word to search: ").strip().lower()
             name_input = input("Which book? ").strip().lower()
 
